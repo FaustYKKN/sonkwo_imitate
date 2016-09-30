@@ -1,0 +1,188 @@
+/*
+* @Author: FaustYKKN
+* @Date:   2016-09-30 10:43:26
+* @Last Modified by:   FaustYKKN
+* @Last Modified time: 2016-09-30 17:20:05
+*/
+@charset "utf-8";
+$aColor: #a5a5a5;
+$basicColor: #2b2b2b;
+$placeColor: #e5e5e5;
+html,
+body,
+ul,li,
+img,
+input,form,textarea,button,
+h1,h2,h3,h4,h5,h6,
+a,span,i{
+	margin: 0;
+	padding: 0;
+}
+body {
+    font: 12px/1.5 'Arial','Microsoft YaHei UI','Microsoft YaHei','sans-serif';
+    color: $basicColor;
+    width: 100%;
+    background-color: $basicColor;
+    background-attachment: fixed;
+    background-repeat: repeat;
+    background-image: url("/assets/bg-3812b2366dc0204ed49c3f81c612f6ddd6621025980d2446d8cb1418f2afbf0d.jpg");
+    min-height: 800px;
+}
+ul,li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: $aColor;
+}
+.SK-topper {
+    height: 114px;
+    width: 100%;
+    min-width: 1200px;
+    background: black;
+    position: fixed;
+    top: 0px;
+    z-index: 100;
+    .SK-topper-container {
+	    width: 1200px;
+	    margin: 0 auto;
+	    .SK-nav-left{
+	    	width: 176px;
+	    	float: left;
+	    	padding-top: 25px;
+	    	margin-left: 5px;
+	    	a{
+	    		cursor: pointer;
+	    		img{
+	    			border: 0;
+	    		}
+	    	}
+	    }
+	    .SK-download{
+	    	float: left;
+	    	background-color: $basicColor;
+	    	border-radius: 30px;
+	    	height: 28px;
+	    	line-height: 28px;
+	    	color: #959595;
+	    	font-size: 14px;
+	    	margin-top: 50px;
+	    	margin-left: 5px;
+	    	padding-left: 15px;
+	    	width: 130px;
+	    }
+	    .SK-nav-right{
+			&:after{
+				content: ".";
+			    display: block;
+			    height: 0;
+			    clear: both;
+			    visibility: hidden;
+			}
+			.SK-nav-right-top{
+				padding-right: 10px;
+				height: 59px;
+				position: relative;
+				margin-left: 400px;
+				.owner{
+					float: right;
+					padding-top: 11px;
+					.owner-pos{
+						position: relative;
+						width: 53px;
+						height: 48px;
+						.owner-img{
+							display: inline-block;
+							width: 46px;
+							height: 46px;
+							border:2px solid #fff;
+							border-radius: 50%;
+							overflow: hidden;
+							position: absolute;
+							left: 0;
+							bottom: 0;
+							img{
+								width: 46px;
+								height: 46px;
+							}
+						}
+					}
+					.SK-pulldown-menu{
+						background-color: rgba(0,0,0,0.75);
+						position: absolute;
+						right: 0;
+						top: 59px;
+						width: 100px;
+						z-index: 1000;
+						display: block;
+						li{
+							font-size: 14px;
+							text-align: center;
+							line-height: 32px;
+							a{
+								color: $placeColor;
+							}
+						}
+					}
+				}
+				.SK-search{
+					float: right;
+					margin-top: 23px;
+					margin-right: 21px;
+					height: 30px;
+					background-color: darkgray;
+					width: 190px;
+					position: relative;
+					border-radius: 15px;
+					font-size: 14px;
+					.SK-search-type{
+						position: absolute;
+						width: 60px;
+						line-height: 30px;
+						background-color: $placeColor;
+						text-align: center;
+						cursor: pointer;
+						z-index: 1000;
+						border-radius: 15px 0 0 15px;
+						.SK-search-type-triangle{
+							position: absolute;
+							top: 11px;
+							right: 2px;
+							border-width: 4px;
+							border-style: solid;
+							border-color:  transparent transparent transparent $basicColor;
+						}
+						.SK-search-type-hide{
+							display: none;
+						}
+						.SK-search-type-ul{/*CHANGE THE CLASS TO CHANGE ITS DISPLAY*/
+							display: block;
+							z-index: 99999;
+							position: relative;
+							li{
+								text-align: center;
+								cursor: pointer;
+								border-top: 1px solid $basicColor;
+							}
+						}
+					}
+					.SK-search-form{
+						display: inline-block;
+						margin-left: 60px;
+						line-height: 30px;
+						.SK-search-text{
+							line-height: 29px;
+							color: #626262;
+							border: 0;
+							background-color: darkgray;
+							width: 102px;
+							text-indent: 8px;
+							
+						}
+					}
+				}
+			}
+	    }
+	}
+}
+
