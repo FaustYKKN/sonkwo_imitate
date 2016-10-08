@@ -1,9 +1,4 @@
-/*
-* @Author: FaustYKKN
-* @Date:   2016-09-30 10:43:26
-* @Last Modified by:   FaustYKKN
-* @Last Modified time: 2016-10-08 10:44:36
-*/
+@charset "UTF-8";
 html,
 body,
 ul, li,
@@ -33,6 +28,22 @@ ul, li {
 a {
   text-decoration: none;
   color: #a5a5a5;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #626262;
+}
+
+input:-moz-placeholder, textarea:-moz-placeholder {
+  color: #626262;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  color: #626262;
+}
+
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  　　color: #626262;
 }
 
 .SK-topper {
@@ -120,7 +131,7 @@ a {
   top: 59px;
   width: 100px;
   z-index: 1000;
-  display: block;
+  display: none;
 }
 .SK-topper .SK-topper-container .SK-nav-right .SK-nav-right-top .owner .SK-pulldown-menu li {
   font-size: 14px;
