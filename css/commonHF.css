@@ -17,7 +17,7 @@ body {
   background-color: #2b2b2b;
   background-attachment: fixed;
   background-repeat: repeat;
-  background-image: url("/assets/bg-3812b2366dc0204ed49c3f81c612f6ddd6621025980d2446d8cb1418f2afbf0d.jpg");
+  background-image: url("../img/bg.jpg");
   min-height: 800px;
 }
 

@@ -1,0 +1,24 @@
+.SK-container {
+	min-height: 800px;
+	.SK-content-about-account {
+	    width: 900px;
+	    margin: 0 auto 38px auto;
+	    padding-top: 126px;
+	    .SK-box{
+	    	.SK-box-title{
+	    		height: 60px;
+	    		line-height: 60px;
+	    		h1{
+	    			text-indent: 25px;
+				    color: white;
+				    font-size: 30px;
+				    font-weight: normal;
+	    		}
+	    	}
+	    	.SK-box-content{
+	    		width: 900px;
+	    		position: relative;
+	    	}
+	    }
+	}
+}

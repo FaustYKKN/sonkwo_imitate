@@ -1,5 +1,6 @@
 $(function(){
-	$('.top').load('top.html',function(){
+	$('.SK-topper').load('topper.html',function(){
+		//alert('wtf')
 		var pulldown = {
 			init: function(){
 				//定义变量对象
@@ -61,5 +62,5 @@ $(function(){
 		};
 		pulldown.init();
 	});
-	$('.foot').load('footer.html');
+	$('.SK-footer').load('footer.html');
 });
