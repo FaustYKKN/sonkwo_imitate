@@ -1,0 +1,147 @@
+<ul class="tabs">
+	<li class="active">
+		<a href="javascript:;">邮箱注册</a>
+	</li>
+	<li>
+		<a href="javascript:;">手机注册</a>
+	</li>
+</ul>
+<!--tabContent-->
+<div class="tab-content">
+	<div class="SK-form-body">
+		<form action="" method="post" class="SK-form SK-form-container">
+			<div class="SK-form-body">
+				<div class="SK-form-block">
+					<label class="SK-with-colon">
+						<div class="SK-label-name">邮箱：</div>
+						<div class="asterisk">*</div>
+					</label>
+					<input type="text" class="SK-form-control" id="email" name="account[email]" placeholder="请输入邮箱">
+				</div>
+				<div class="SK-form-block">
+					<label class="SK-with-colon">
+						<div class="SK-label-name">密码：</div>
+						<div class="asterisk">*</div>
+					</label>
+					<input type="password" class="SK-form-control" id="password" name="account[password]" placeholder="请输入密码">
+				</div>
+				<div class="SK-form-block">
+					<label class="SK-with-colon">
+						<div class="SK-label-name">确认密码：</div>
+						<div class="asterisk">*</div>
+					</label>
+					<input type="password" class="SK-form-control" id="password_confirmation" name="account[password_confirmation]" placeholder="请再次填写密码">
+				</div>
+				<div class="SK-form-block SK-column-three">
+					<label class="SK-with-colon">
+						<div class="SK-label-name">验证码：</div>
+						<div class="asterisk">*</div>
+					</label>
+					<input type="text" class="SK-form-control" id="captcha" name="account[captcha]">
+					<div class="SK-captcha">
+						<img src="img/">
+					</div>
+					<div class="SK-captcha-change-btn">换一换</div>
+				</div>
+				<!--userinfo-->
+				<div>
+				    <div class="SK-form-block desc">根据文化部《网络游戏管理暂行办法》规定，本网站用户须使用有效证件进行实名注册</div>
+				    <div class="SK-form-block">
+				        <div class="SK-form-radios-group">
+				            <div>
+				                <input type="radio" name="account[anti_addiction]" id="account_anti_addiction_false"
+				                value="false">
+				                <label>
+				                    只是注册了进来看看
+				                </label>
+				            </div>
+				            <div>
+				                <input type="radio" name="account[anti_addiction]" id="account_anti_addiction_true"
+				                value="true" checked>
+				                <label>
+				                    完善防沉迷资料，提高账户安全
+				                </label>
+				            </div>
+				        </div>
+				    </div>
+				    <div class="SK-credential">
+				        <div class="SK-form-block desc">
+				            实名认证后不可修改，请填写真实资料
+				        </div>
+				        <div class="SK-form-block">
+				            <label class="SK-with-colon">
+				                <div class="SK-label-name">
+				                    真实姓名：
+				                </div>
+				                <div class="asterisk">
+				                    *
+				                </div>
+				            </label>
+				            <input type="text" class="SK-form-control" name="account[real_name]" id="real_name"
+				            placeholder="请输入您的真实姓名" value="">
+				            <!-- react-text: 6623 -->
+				            <!-- /react-text -->
+				        </div>
+				        <div class="SK-form-block">
+				            <label class="SK-with-colon">
+				                <div class="SK-label-name">
+				                    证件类型 :
+				                </div>
+				                <div class="asterisk">
+				                    *
+				                </div>
+				            </label>
+				            <select name="account[credential_type]" id="credential_type" class="SK-form-control">
+				                <option value="0">
+				                    身份证
+				                </option>
+				                <option value="1">
+				                    护照
+				                </option>
+				                <option value="2">
+				                    军官证
+				                </option>
+				            </select>
+				        </div>
+				        <div class="SK-form-block">
+				            <label class="SK-with-colon">
+				                <div class="SK-label-name">
+				                    证件号：
+				                </div>
+				                <div class="asterisk">
+				                    *
+				                </div>
+				            </label>
+				            <input type="text" class="SK-form-control" name="account[credential_num]"
+				            id="credential_num" placeholder="请输入证件号" value="">
+				            <!-- react-text: 6637 -->
+				            <!-- /react-text -->
+				        </div>
+				    </div>
+				    <div class="SK-form-block">
+				        <div class="SK-form-checkbox">
+				            <input type="checkbox" value="true" name="account[tos_agreement]" checked>
+				            <label>
+				                <a target="_blank" href="/agreement">
+				                    同意杉果协议
+				                </a>
+				            </label>
+				        </div>
+				        <!-- react-text: 6643 -->
+				        <!-- /react-text -->
+				    </div>
+				    <div class="SK-form-block">
+				        <span>
+				            <input type="submit" name="commit" value="注册" class="SK-btn">
+				        </span>
+				        <span>
+				            <a class="SK-grid-item" href="/sign_in">
+				                已有账号?登录
+				            </a>
+				        </span>
+				    </div>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>

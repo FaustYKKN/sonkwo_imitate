@@ -1,4 +1,9 @@
 .SK-container {
+	a{
+		&:hover{
+			text-decoration: underline;
+		}
+	}
 	min-height: 800px;
 	.SK-content-about-account {
 	    width: 900px;
@@ -18,6 +23,205 @@
 	    	.SK-box-content{
 	    		width: 900px;
 	    		position: relative;
+	    		.tabs{
+	    			height: 63px;
+	    			line-height: 63px;
+					li{
+						width: 450px;
+					    text-align: center;
+					    float: left;
+					    opacity: 0.7;
+					    filter: alpha(opacity=70);
+					    background-color: white;
+					    font-size: 20px;
+					    a{
+					    	color: #2b2b2b;
+					    }
+					}
+					.active{
+						background-color: #2f5c94;
+					    opacity: 0.95;
+					    filter: alpha(opacity=95);
+					    a{
+					    	color: white;
+					    }
+					}
+	    		}
+	    		.tab-content{
+	    			position: relative;
+				    background-color: white;
+				    min-height: 300px;
+				    .SK-form-body{
+				    	padding: 43px 0 38px 0;
+				    	form{
+				    		.SK-form-body{
+				    			.SK-form-block {
+								    margin-bottom: 12px;
+								    overflow: hidden;
+								    &:after {
+										    content: ".";
+										    display: block;
+										    height: 0;
+										    clear: both;
+										    visibility: hidden;
+									}
+								    .SK-with-colon {
+									    width: 240px;
+									    height: 48px;
+									    display: inline-block;
+									    float: left;
+									    .SK-label-name {
+										    display: inline-block;
+										    height: 48px;
+										    line-height: 48px;
+										    margin-right: 10px;
+										    float: right;
+										    text-align: right;
+										    font-size: 16px;
+										    color: #2b2b2b;
+										}
+										.asterisk {
+										    display: inline-block;
+										    color: #eb6100;
+										    width: 15px;
+										    font-size: 30px;
+										    float: right;
+										    height: 42px;
+										    padding-top: 6px;
+										    line-height: 48px;
+										}
+										&:after {
+										    content: ".";
+										    display: block;
+										    height: 0;
+										    clear: both;
+										    visibility: hidden;
+										}
+									}
+									.SK-form-control {
+									    width: 388px;
+									    height: 48px;
+									    line-height: 48px;
+									    background-color: #c9c9c9;
+									    border: none;
+									    font-size: 16px;
+									    text-indent: 5px;
+									    float: left;
+									    border: 1px solid transparent;
+									    &:focus{
+									    	border: 1px solid #2666b5;
+									    }
+									}
+									.error{
+										border: 1px solid #eb6100!important;
+									}
+									.SK-form-hint {
+									    float: left;
+									    width: 230px;
+									    height: 48px;
+									    font-size: 16px;
+									    line-height: 48px;
+									    padding-left: 5px;
+									    overflow: hidden;
+									}
+									.SK-form-hint.info-hint {
+									    color: #959595;
+									    i{
+									    	color: #2666b5;
+									    }
+									}
+									.SK-form-hint.error-hint {
+									    color: #eb6100;
+									}
+								}
+								.SK-column-three {
+									.SK-form-control {
+									    width: 151px;
+									    display: inline-block;
+									    float: left;
+									}
+									.SK-captcha {
+									    float: left;
+									    height: 50px;
+									    cursor: pointer;
+									    padding: 0 15px;
+									    img {
+										    float: left;
+										    margin-top: -1px;
+										    height: 50px;
+										    width: 120px;
+										}
+									}
+									.SK-captcha-change-btn {
+									    color: #959595;
+									    line-height: 48px;
+									    float: left;
+									    text-align: center;
+									    height: 48px;
+									    border: 1px solid #959595;
+									    cursor: pointer;
+									    width: 85px;
+									    font-size: 16px;
+									}
+								}
+								.desc {
+								    margin-left: 240px;
+								    font-size: 14px;
+								    color: #959595;
+								    width: 390px;
+								}
+								.SK-form-radios-group {
+								    margin-left: 240px;
+								    label {
+									    height: 30px;
+									    line-height: 30px;
+									    font-size: 16px;
+									    margin-left: 5px;
+									}
+								}
+				    		}
+				    		.SK-form-checkbox{
+				    			    margin-left: 240px;
+								    height: 48px;
+								    width: 390px;
+								    line-height: 48px;
+								    float: left;
+								    label{
+								    	font-size: 16px;
+    									margin-left: 5px;
+								    	a {
+									    	color: #2f5c94;
+										}
+								    }
+								    
+				    		}
+				    		.SK-btn {
+							    display: inline-block;
+							    width: 118px;
+							    height: 50px;
+							    line-height: 50px;
+							    text-align: center;
+							    color: white;
+							    font-size: 18px;
+							    margin-right: 270px;
+							    background-color: #2666b5;
+							    border: none;
+							    margin-left: 15px;
+							    cursor: pointer;
+							    -moz-border-radius: 3px 3px 3px 3px;
+							    -webkit-border-radius: 3px 3px 3px 3px;
+							    border-radius: 3px 3px 3px 3px;
+							    float: right;
+							}
+							.SK-grid-item {
+							    color: #2b2b2b;
+							    font-size: 16px;
+							    margin-top: 25px;
+							    float: right;
+							}
+				    	}
+				    }
+	    		}
 	    	}
 	    }
 	}

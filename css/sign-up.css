@@ -1,6 +1,9 @@
 .SK-container {
   min-height: 800px;
 }
+.SK-container a:hover {
+  text-decoration: underline;
+}
 .SK-container .SK-content-about-account {
   width: 900px;
   margin: 0 auto 38px auto;
@@ -19,6 +22,198 @@
 .SK-container .SK-content-about-account .SK-box .SK-box-content {
   width: 900px;
   position: relative;
+}
+.SK-container .SK-content-about-account .SK-box .SK-box-content .tabs {
+  height: 63px;
+  line-height: 63px;
+}
+.SK-container .SK-content-about-account .SK-box .SK-box-content .tabs li {
+  width: 450px;
+  text-align: center;
+  float: left;
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+  background-color: white;
+  font-size: 20px;
+}
+.SK-container .SK-content-about-account .SK-box .SK-box-content .tabs li a {
+  color: #2b2b2b;
+}
+.SK-container .SK-content-about-account .SK-box .SK-box-content .tabs .active {
+  background-color: #2f5c94;
+  opacity: 0.95;
+  filter: alpha(opacity=95);
+}
+.SK-container .SK-content-about-account .SK-box .SK-box-content .tabs .active a {
+  color: white;
+}
+.SK-container .SK-content-about-account .SK-box .SK-box-content .tab-content {
+  position: relative;
+  background-color: white;
+  min-height: 300px;
+}
+.SK-container .SK-content-about-account .SK-box .SK-box-content .tab-content .SK-form-body {
+  padding: 43px 0 38px 0;
+}
+.SK-container .SK-content-about-account .SK-box .SK-box-content .tab-content .SK-form-body form .SK-form-body .SK-form-block {
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+.SK-container .SK-content-about-account .SK-box .SK-box-content .tab-content .SK-form-body form .SK-form-body .SK-form-block:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.SK-container .SK-content-about-account .SK-box .SK-box-content .tab-content .SK-form-body form .SK-form-body .SK-form-block .SK-with-colon {
+  width: 240px;
+  height: 48px;
+  display: inline-block;
+  float: left;
+}
+.SK-container .SK-content-about-account .SK-box .SK-box-content .tab-content .SK-form-body form .SK-form-body .SK-form-block .SK-with-colon .SK-label-name {
+  display: inline-block;
+  height: 48px;
+  line-height: 48px;
+  margin-right: 10px;
+  float: right;
+  text-align: right;
+  font-size: 16px;
+  color: #2b2b2b;
+}
+.SK-container .SK-content-about-account .SK-box .SK-box-content .tab-content .SK-form-body form .SK-form-body .SK-form-block .SK-with-colon .asterisk {
+  display: inline-block;
+  color: #eb6100;
+  width: 15px;
+  font-size: 30px;
+  float: right;
+  height: 42px;
+  padding-top: 6px;
+  line-height: 48px;
+}
+.SK-container .SK-content-about-account .SK-box .SK-box-content .tab-content .SK-form-body form .SK-form-body .SK-form-block .SK-with-colon:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.SK-container .SK-content-about-account .SK-box .SK-box-content .tab-content .SK-form-body form .SK-form-body .SK-form-block .SK-form-control {
+  width: 388px;
+  height: 48px;
+  line-height: 48px;
+  background-color: #c9c9c9;
+  border: none;
+  font-size: 16px;
+  text-indent: 5px;
+  float: left;
+  border: 1px solid transparent;
+}
+.SK-container .SK-content-about-account .SK-box .SK-box-content .tab-content .SK-form-body form .SK-form-body .SK-form-block .SK-form-control:focus {
+  border: 1px solid #2666b5;
+}
+.SK-container .SK-content-about-account .SK-box .SK-box-content .tab-content .SK-form-body form .SK-form-body .SK-form-block .error {
+  border: 1px solid #eb6100 !important;
+}
+.SK-container .SK-content-about-account .SK-box .SK-box-content .tab-content .SK-form-body form .SK-form-body .SK-form-block .SK-form-hint {
+  float: left;
+  width: 230px;
+  height: 48px;
+  font-size: 16px;
+  line-height: 48px;
+  padding-left: 5px;
+  overflow: hidden;
+}
+.SK-container .SK-content-about-account .SK-box .SK-box-content .tab-content .SK-form-body form .SK-form-body .SK-form-block .SK-form-hint.info-hint {
+  color: #959595;
+}
+.SK-container .SK-content-about-account .SK-box .SK-box-content .tab-content .SK-form-body form .SK-form-body .SK-form-block .SK-form-hint.info-hint i {
+  color: #2666b5;
+}
+.SK-container .SK-content-about-account .SK-box .SK-box-content .tab-content .SK-form-body form .SK-form-body .SK-form-block .SK-form-hint.error-hint {
+  color: #eb6100;
+}
+.SK-container .SK-content-about-account .SK-box .SK-box-content .tab-content .SK-form-body form .SK-form-body .SK-column-three .SK-form-control {
+  width: 151px;
+  display: inline-block;
+  float: left;
+}
+.SK-container .SK-content-about-account .SK-box .SK-box-content .tab-content .SK-form-body form .SK-form-body .SK-column-three .SK-captcha {
+  float: left;
+  height: 50px;
+  cursor: pointer;
+  padding: 0 15px;
+}
+.SK-container .SK-content-about-account .SK-box .SK-box-content .tab-content .SK-form-body form .SK-form-body .SK-column-three .SK-captcha img {
+  float: left;
+  margin-top: -1px;
+  height: 50px;
+  width: 120px;
+}
+.SK-container .SK-content-about-account .SK-box .SK-box-content .tab-content .SK-form-body form .SK-form-body .SK-column-three .SK-captcha-change-btn {
+  color: #959595;
+  line-height: 48px;
+  float: left;
+  text-align: center;
+  height: 48px;
+  border: 1px solid #959595;
+  cursor: pointer;
+  width: 85px;
+  font-size: 16px;
+}
+.SK-container .SK-content-about-account .SK-box .SK-box-content .tab-content .SK-form-body form .SK-form-body .desc {
+  margin-left: 240px;
+  font-size: 14px;
+  color: #959595;
+  width: 390px;
+}
+.SK-container .SK-content-about-account .SK-box .SK-box-content .tab-content .SK-form-body form .SK-form-body .SK-form-radios-group {
+  margin-left: 240px;
+}
+.SK-container .SK-content-about-account .SK-box .SK-box-content .tab-content .SK-form-body form .SK-form-body .SK-form-radios-group label {
+  height: 30px;
+  line-height: 30px;
+  font-size: 16px;
+  margin-left: 5px;
+}
+.SK-container .SK-content-about-account .SK-box .SK-box-content .tab-content .SK-form-body form .SK-form-checkbox {
+  margin-left: 240px;
+  height: 48px;
+  width: 390px;
+  line-height: 48px;
+  float: left;
+}
+.SK-container .SK-content-about-account .SK-box .SK-box-content .tab-content .SK-form-body form .SK-form-checkbox label {
+  font-size: 16px;
+  margin-left: 5px;
+}
+.SK-container .SK-content-about-account .SK-box .SK-box-content .tab-content .SK-form-body form .SK-form-checkbox label a {
+  color: #2f5c94;
+}
+.SK-container .SK-content-about-account .SK-box .SK-box-content .tab-content .SK-form-body form .SK-btn {
+  display: inline-block;
+  width: 118px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  margin-right: 270px;
+  background-color: #2666b5;
+  border: none;
+  margin-left: 15px;
+  cursor: pointer;
+  -moz-border-radius: 3px 3px 3px 3px;
+  -webkit-border-radius: 3px 3px 3px 3px;
+  border-radius: 3px 3px 3px 3px;
+  float: right;
+}
+.SK-container .SK-content-about-account .SK-box .SK-box-content .tab-content .SK-form-body form .SK-grid-item {
+  color: #2b2b2b;
+  font-size: 16px;
+  margin-top: 25px;
+  float: right;
 }
 
 /*# sourceMappingURL=sign-up.css.map */

@@ -30,6 +30,10 @@ a {
   color: #a5a5a5;
 }
 
+img {
+  border: none;
+}
+
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   color: #626262;
 }

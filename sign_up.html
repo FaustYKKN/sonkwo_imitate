@@ -12,145 +12,19 @@
 	<div class="SK-container">
         <div class="SK-content-registration SK-content-about-account">
             <div class="SK-box">
-                <div class="SK-box-title">
-                    <h1>注册账号</h1>
-                </div>
-                <div class="SK-box-content" id="SK-sign-up-content">
-    <div data-reactroot="">
-        <ul class="tabs">
-            <li class="active">
-                <a href="/sign_up?channel=email">
-                    邮箱注册
-                </a>
-            </li>
-            <li class="">
-                <a href="/sign_up?channel=phone">
-                    手机注册
-                </a>
-            </li>
-        </ul>
-        <div class="tab-content">
-            <div class="SK-form-body">
-                <form class="SK-form SK-form-container" method="post" action="/sign_up?channel=email">
-                    <div class="SK-form-body">
-                        <div class="SK-form-block">
-                            <label class="SK-with-colon">
-                                <div class="SK-label-name">
-                                    邮箱：
-                                </div>
-                                <div class="asterisk">
-                                    *
-                                </div>
-                            </label>
-                            <input type="text" class="SK-form-control" name="account[email]" id="email"
-                            placeholder="请输入邮箱" value="">
-                            <!-- react-text: 16 -->
-                            <!-- /react-text -->
-                        </div>
-                        <div class="SK-form-block">
-                            <label class="SK-with-colon">
-                                <div class="SK-label-name">
-                                    密码：
-                                </div>
-                                <div class="asterisk">
-                                    *
-                                </div>
-                            </label>
-                            <input type="password" class="SK-form-control" name="account[password]"
-                            id="password" placeholder="请输入密码" value="">
-                            <!-- react-text: 22 -->
-                            <!-- /react-text -->
-                        </div>
-                        <div class="SK-form-block">
-                            <label class="SK-with-colon">
-                                <div class="SK-label-name">
-                                    确认密码：
-                                </div>
-                                <div class="asterisk">
-                                    *
-                                </div>
-                            </label>
-                            <input type="password" class="SK-form-control" name="account[password_confirmation]"
-                            id="password_confirmation" placeholder="请再次填写密码" value="">
-                            <!-- react-text: 28 -->
-                            <!-- /react-text -->
-                        </div>
-                        <div class="SK-form-block SK-column-three">
-                            <label class="SK-with-colon">
-                                <div class="SK-label-name">
-                                    验证码：
-                                </div>
-                                <div class="asterisk">
-                                    *
-                                </div>
-                            </label>
-                            <input type="text" class="SK-form-control" name="account[captcha]" id="captcha"
-                            value="">
-                            <div class="SK-captcha">
-                                <img src="/captcha" height="50" width="120">
-                            </div>
-                            <div class="SK-captcha-change-btn">
-                                换一换
-                            </div>
-                            <!-- react-text: 37 -->
-                            <!-- /react-text -->
-                        </div>
-                        <div>
-                            <div class="SK-form-block desc">
-                                根据文化部《网络游戏管理暂行办法》规定，本网站用户须使用有效证件进行实名注册
-                            </div>
-                            <div class="SK-form-block">
-                                <div class="SK-form-radios-group">
-                                    <div>
-                                        <input type="radio" name="account[anti_addiction]" id="account_anti_addiction_false"
-                                        value="false">
-                                        <label>
-                                            只是注册了进来看看
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <input type="radio" name="account[anti_addiction]" id="account_anti_addiction_true"
-                                        value="true">
-                                        <label>
-                                            完善防沉迷资料，提高账户安全
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="SK-form-block">
-                                <div class="SK-form-checkbox">
-                                    <input type="checkbox" value="true" name="account[tos_agreement]">
-                                    <label>
-                                        <a target="_blank" href="/agreement">
-                                            同意杉果协议
-                                        </a>
-                                    </label>
-                                </div>
-                                <!-- react-text: 53 -->
-                                <!-- /react-text -->
-                            </div>
-                            <div class="SK-form-block">
-                                <span>
-                                    <input type="submit" name="commit" value="注册" class="SK-btn">
-                                </span>
-                                <span>
-                                    <a class="SK-grid-item" href="/sign_in">
-                                        已有账号?登录
-                                    </a>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
+            	<div class="SK-box-title">
+            		<h1>注册账号</h1>
+            	</div>
+            	<div class="SK-box-content" id="SK-sign-up-content">
+            	<!--接受数据绘制card-->
+            		<div class="data-reactroot"></div>
+            	</div>
             </div>
         </div>
     </div>
 	<div class="SK-footer"></div>
 	<script src="js/jquery-1.11.3.js"></script>
 	<script src="js/topfoot.js"></script>
+	<script src="js/sign-up-card.js"></script>
 </body>
 </html>

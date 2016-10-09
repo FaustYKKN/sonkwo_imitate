@@ -29,6 +29,9 @@ a{
 	text-decoration: none;
 	color: $aColor;
 }
+img{
+	border: none;
+}
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
     color: #626262;
 }
