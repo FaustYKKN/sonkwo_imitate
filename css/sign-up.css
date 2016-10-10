@@ -162,6 +162,10 @@
   width: 85px;
   font-size: 16px;
 }
+.SK-container .SK-content-about-account .SK-box .SK-box-content .tab-content .SK-form-body form .SK-form-body .SK-column-three .SK-captcha-change-btn:hover {
+  color: #eb6100;
+  border-color: #eb6100;
+}
 .SK-container .SK-content-about-account .SK-box .SK-box-content .tab-content .SK-form-body form .SK-form-body .desc {
   margin-left: 240px;
   font-size: 14px;

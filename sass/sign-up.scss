@@ -162,6 +162,10 @@
 									    cursor: pointer;
 									    width: 85px;
 									    font-size: 16px;
+									    &:hover{
+									    	color: #eb6100;
+									    	border-color: #eb6100;
+									    }
 									}
 								}
 								.desc {
