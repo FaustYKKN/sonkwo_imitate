@@ -1,1 +1,92 @@
-﻿
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>杉果游戏——登录</title>
+	<link rel="stylesheet" href="Font-Awesome-4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/commonHF.css">
+	<link rel="stylesheet" href="css/sign-in.css">
+</head>
+<body>
+	<div class="SK-topper"></div>
+	<div class="SK-container">
+		<div class="SK-content-sign-in">
+			<div class="SK-content SK-container-bg SK-signin-block">
+				<div class="SK-login">
+					<form action="post" class="SK-form" name="form">
+						<div class="SK-form-title"><h1>登录</h1></div>
+						<div class="SK-form-body-wrapper">
+						    <div id="sign-in-form-container">
+						        <div data-reactroot="" class="SK-form-body">
+						            <div class="SK-form-line">
+						                <span class="SK-login-form-block-indicate">
+						                    <i class="fa-user">
+						                    </i>
+						                </span>
+						                <div class="SK-form-block">
+						                    <label class="SK-with-colon">
+						                        <div class="SK-label-name">
+						                            ：
+						                        </div>
+						                        <div class="asterisk">
+						                            *
+						                        </div>
+						                    </label>
+						                    <input type="text" class="SK-form-control" name="account[login_name]"
+						                    id="login_name" placeholder="请输入用户名" value="lingyingcome@163.com">
+						                </div>
+						            </div>
+						            <div class="SK-form-line">
+						                <span class="SK-login-form-block-indicate">
+						                    <i class="fa-lock">
+						                    </i>
+						                </span>
+						                <div class="SK-form-block">
+						                    <label class="SK-with-colon">
+						                        <div class="SK-label-name">
+						                            ：
+						                        </div>
+						                        <div class="asterisk">
+						                            *
+						                        </div>
+						                    </label>
+						                    <input type="password" class="SK-form-control" name="account[password]"
+						                    id="password" placeholder="请输入密码" value="0908123xuye">
+						                </div>
+						            </div>
+						            <div class="SK-form-block btn-block">
+						                <input type="checkbox" name="account[remember_me]" id="account_remember_me"
+						                value="1">
+						                <label for="remember_me">记住密码</label>
+						                <a class="SK-oauth-sina" href="/oauth/auth?provider=weibo">
+						                    <i class="fa fa-weibo">
+						                    </i>
+						                </a>
+						                <a class="SK-oauth-steam" href="/oauth/auth?provider=steam">
+						                    <i class="fa fa-steam-square">
+						                    </i>
+						                </a>
+						                <span>
+						                    <input type="submit" name="commit" value="登录" class="SK-btn right">
+						                </span>
+						            </div>
+						        </div>
+						    </div>
+						</div>
+						<div class="SK-grid-item forgets">
+							<a class="SK-grid-item right" href="/password/new">忘记密码?</a>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="SK-content SK-container-bg SK-signin-block signup">
+				<a class="SK-btn" href="/sign_up">立即注册</a>
+			</div>
+		</div>
+	</div>
+	<div class="SK-footer"></div>
+	<script src="js/jquery-1.11.3.js"></script>
+	<script src="js/topfoot.js"></script>
+	<script src="js/sign-in.js"></script>
+</body>
+</html>

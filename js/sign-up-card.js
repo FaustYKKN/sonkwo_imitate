@@ -28,7 +28,7 @@ $(function(){
 				this.control.blur(function(){
 					//that.ero(this);
 					var controlId = $(this).attr('id');
-					console.log("when")
+					//console.log("when")
 					$(this).next('.SK-form-hint').remove();
 					that.ero(this,controlId);
 				});
@@ -64,6 +64,7 @@ $(function(){
 				var regpw = /^[a-zA-Z0-9\!@#\$%\^\&\*\(\)-\+=_\.,\?]{8,20}$/;
 				if(controlId == 'email' && !regemail.test($(which).val())){
 					var hintCon = '请输入一个有效的电子邮箱';
+					//alert("y")
 					var hint = this.hintCon(hintCon);
 					$(which).parent().append(hint);
 					$(which).addClass('error');
@@ -73,7 +74,7 @@ $(function(){
 					var hint = this.hintCon(hintCon);
 					$(which).parent().append(hint);
 					$(which).addClass('error');
-					this.errorCount++;
+					this.errorCount=1;
 				}else if(controlId == 'password' && !regpw.test($(which).val())){
 					var hintCon = '8-20位的数字、字母或符号';
 					var hint = this.hintCon(hintCon);
@@ -88,7 +89,8 @@ $(function(){
 					this.errorCount++;
 				}else if(!$(which).val()){
 					$(which).addClass('error');
-					this.errorCount++;
+					//this.errorCount++;
+					//alert(controlId);
 				}else{
 					this.errorCount=0;
 				};
@@ -96,9 +98,9 @@ $(function(){
 			hintCon: function(hintCon,tf){
 				var hint = '';
 				if(tf){
-					var hintpre = '<div class="SK-form-hint info-hint"><i class=icon-warning-sign></i>';
+					var hintpre = '<div class="SK-form-hint info-hint"><i class="fa fa-exclamation-triangle"></i>';
 				}else{
-					var hintpre = '<div class="SK-form-hint error-hint"><i class=icon-ban-circle></i>';
+					var hintpre = '<div class="SK-form-hint error-hint"><i class="fa fa-times-circle"></i>';
 				}
 				//var hintpre = '<div class="SK-form-hint info-hint"><i class=icon-warning-sign></i>';
 				var hinttail = '</div>'
@@ -109,7 +111,7 @@ $(function(){
 				var that = this;
 				$(form).submit(function(){
 					that.control.blur();
-					if(that.errorCount != 0 ){
+					if(that.errorCount != 0){
 						//that.control.blur();
 						console.log('f:'+that.errorCount)
 						return false;

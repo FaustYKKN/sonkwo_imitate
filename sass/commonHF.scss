@@ -44,6 +44,9 @@ input::-moz-placeholder, textarea::-moz-placeholder {
 input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 　　color:#626262;
 }
+input{
+	border: 0;
+}
 .SK-topper {
     height: 114px;
     width: 100%;
@@ -195,7 +198,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 							width: 102px;
 							text-indent: 8px;
 						}
-						.icon-search{
+						.fa{
 						    font-size: 18px;
 						    cursor: pointer;
 						    margin-right: 4px;
