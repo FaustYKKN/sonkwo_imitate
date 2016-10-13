@@ -5,9 +5,19 @@ ul, li,
 img,
 input, form, textarea, button,
 h1, h2, h3, h4, h5, h6,
-a, span, i, p {
+a, span, i, p, td,th,tr,table{
   margin: 0;
   padding: 0;
+}
+
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0);
 }
 
 body {
@@ -29,7 +39,12 @@ a {
   text-decoration: none;
   color: #a5a5a5;
 }
-
+a:hover{
+  text-decoration: underline;
+}
+li a:hover{
+  text-decoration: none;
+}
 img {
   border: none;
 }

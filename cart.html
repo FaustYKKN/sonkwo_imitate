@@ -2,9 +2,73 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>您的订单</title>
+	<title>您的订单 || 杉果游戏</title>
+	<link rel="stylesheet" href="Font-Awesome-4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/commonHF.css">
+	<link rel="stylesheet" href="css/cart.css">
 </head>
 <body>
-	
+	<div class="SK-topper"></div>
+		<div class="SK-container">
+			<div class="SK-cart-container-wrapper">
+				<div class="SK-cart-container">
+					<div class="SK-cart-header">
+						<div class="SK-sonkwo-title">我的购物车</div>
+					    <div class="SK-cart-process">
+					        <span class="active">我的购物车</span>
+					        <span>确认订单</span><span>完成订单</span>
+					    </div>
+					</div>
+					<div class="SK-cart-content">
+						<form method="post" action="" class="SK-cart-form">
+							<div class="SK-cart-block">
+								<div class="SK-cart-table">
+									<table class="SK-cart-table-content">
+										<thead class="SK-cart-table-head">
+											<tr>
+												<th class="check" width="8%">
+													<input class="checkall" type="checkbox">&nbsp;全选
+												</th>
+												<th class="name" width="30%">游戏名称</th>
+												<th class="tag" width="26%">游戏类型</th>
+												<th class="price" width="20%">游戏价格</th>
+												<th class="oper" width="14%">操作</th>
+											</tr>
+										</thead>
+										<tbody class="SK-cart-table-body"></tbody>
+									</table>
+									<div class="SK-cart-games-subtotal">
+										<div class="left-action">
+									        <div class="check">
+									            <input class="checkall" type="checkbox">&nbsp;全选
+									        </div>
+									        <span class="SK-check-delete delete-enable">删除</span>
+								    	</div>
+									    共&nbsp;
+									    <i class="games-count">0</i>
+									    &nbsp;款游戏&nbsp;&nbsp;
+									    <span>小计：</span>
+									    <span class="num">¥0.00</span>
+									</div>
+								</div>
+								<div class="SK-cart-total">
+									实付金额：
+									<i class="num">￥0.00</i>
+								</div>
+								<div class="SK-cart-action">
+									<a class="SK-cart-back" href="/store"><i class="fa fa-share"></i>&nbsp; 再逛逛</a>
+									<input class="SK-cart-submit SK-order-disable" disabled="disabled" type="submit" value="确认并付款">
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	<div class="SK-footer"></div>
+	<script src="js/jquery-1.11.3.js"></script>
+	<script src="js/jquery.cookie.js"></script>
+	<script src="js/topfoot.js"></script>
+	<script src="js/cart.js"></script>
 </body>
 </html>

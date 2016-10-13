@@ -66,11 +66,22 @@ $(function(){
 				$(which).addClass('error');
 				this.reg.password = false;
 				//this.errorCount++;
-			}/*else{
-				//this.errorCount=0;
+			}else if(controlId == 'login_name' && regemail.test($(which).val()) || regphone.test($(which).val())){
+				//var hintCon = '请输入一个有效的电子邮箱或手机号';
+				//alert("y")
+				//var hint = this.hintCon(hintCon);
+				//$(which).parent().append(hint);
+				//$(which).removeClass('error');
 				this.reg.login_name = true;
+				//this.errorCount++;
+			}else if(controlId == 'password' && regpw.test($(which).val())){
+				//var hintCon = '8-20位的数字、字母或符号';
+				//var hint = this.hintCon(hintCon);
+				//$(which).parent().append(hint);
+				//$(which).removeClass('error');
 				this.reg.password = true;
-			};*/
+				//this.errorCount++;
+			}
 		},
 		hintCon: function(hintCon,tf){
 			var hint = '';
@@ -86,8 +97,9 @@ $(function(){
 		},
 		loginCheck: function(){
 			var that = this;
-			this.form.submit(function(){
+			this.form.submit(function(e){
 				//alert('wait')
+				e.preventDefault();
 				var flag = true;
 				that.control.blur();
 				for(var key in that.reg){
@@ -96,7 +108,7 @@ $(function(){
 						break;
 					}
 				}
-				alert(flag);
+				//alert(flag);
 				/*for(var key in this.reg){
 						if(!this.reg[key]){
 							alert("blur")
@@ -107,7 +119,16 @@ $(function(){
 				if(!flag){
 					return false;
 				}*/
-				return false;
+				if(!flag){
+					return false;
+				}else{
+					alert('Welcome!');
+					window.location.href = 'store.html';
+					return true;
+					//alert('Welcome!');
+				}
+				
+				
 			});
 			
 		},

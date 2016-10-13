@@ -12,7 +12,15 @@ $(function(){
 				this.whenFocus();
 				this.whenBlur();
 				this.submitCheck();
-				this.errorCount = 0;
+				//this.errorCount = 0;
+				this.regUser = {
+					email: true,
+					phone_number: true,
+				};
+				this.regPw = {
+					password: true,
+					password_confirmation: true,
+				};
 			},
 			whenFocus: function(){
 				var that = this;
@@ -68,32 +76,40 @@ $(function(){
 					var hint = this.hintCon(hintCon);
 					$(which).parent().append(hint);
 					$(which).addClass('error');
-					this.errorCount++;
+					this.regUser.email = false;
+					//this.reg.phone_number = true;
 				}else if(controlId == 'phone_number' && !regphone.test($(which).val())){
 					var hintCon = '请输入有效的11位手机号';
 					var hint = this.hintCon(hintCon);
 					$(which).parent().append(hint);
 					$(which).addClass('error');
-					this.errorCount=1;
+					this.regUser.phone_number = false;
+					//this.reg.email = true;
 				}else if(controlId == 'password' && !regpw.test($(which).val())){
 					var hintCon = '8-20位的数字、字母或符号';
 					var hint = this.hintCon(hintCon);
 					$(which).parent().append(hint);
 					$(which).addClass('error');
-					this.errorCount++;
+					this.regPw.password = false;
 				}else if(controlId == 'password_confirmation' && !($(which).val() == $('#password').val())){
 					var hintCon = '两次填写的密码不一致';
 					var hint = this.hintCon(hintCon);
 					$(which).parent().append(hint);
 					$(which).addClass('error');
-					this.errorCount++;
+					this.regPw.password_confirmation = false;
 				}else if(!$(which).val()){
 					$(which).addClass('error');
 					//this.errorCount++;
 					//alert(controlId);
-				}else{
-					this.errorCount=0;
-				};
+				}else if(controlId == 'email' && regemail.test($(which).val())){
+					this.regUser.email = true;
+				}else if(controlId == 'phone_number' && regphone.test($(which).val())){
+					this.regUser.phone_number = true;
+				}else if(controlId == 'password' && regpw.test($(which).val())){
+					this.regPw.password = true;
+				}else if(controlId == 'password_confirmation' && ($(which).val() == $('#password').val())){
+					this.regPw.password_confirmation = true;
+				}
 			},
 			hintCon: function(hintCon,tf){
 				var hint = '';
@@ -109,14 +125,35 @@ $(function(){
 			},
 			submitCheck: function(){
 				var that = this;
-				$(form).submit(function(){
+				$(form).submit(function(e){
+					e.preventDefault();
 					that.control.blur();
-					if(that.errorCount != 0){
+					var flagUser = true;
+					var flagPw = true;
+					for(var keyU in that.regUser){
+						if(that.regUser[keyU]){
+							flagUser = true;
+							break;
+						}else{
+							flagUser = false;
+						}
+					};
+					for(var keyP in that.regPw){
+						if(!that.regPw[keyP]){
+							flagPw = false;
+							break;
+						}else{
+							flagPw = true;
+						};
+					};
+					if(!flagPw || !flagUser){
 						//that.control.blur();
-						console.log('f:'+that.errorCount)
+						console.log('flagUser:'+ flagUser +"||flagPw"+flagPw);
 						return false;
 					}else{
-						alert('gongxi:'+that.errorCount)
+						alert('杉果游戏欢迎您的加入！！！')
+						//alert('Welcome!');
+						window.location.href = 'sign_in.html';
 						return true;
 					}
 				});
